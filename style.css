@@ -1,0 +1,69 @@
+.container {
+	width: 100%;
+	max-width: 1320px;
+	padding-inline: 20px;
+	margin: 0 auto;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.mouse {
+	width: 56px;
+	height: 80px;
+	border: 2px solid white;
+	border-radius: 60px;
+	position: relative;
+  opacity: 0.6;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mouse::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: wheel 2s infinite;
+  -webkit-animation: wheel 2s infinite;
+}
+  
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
